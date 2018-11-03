@@ -30,7 +30,7 @@ gulp.task('sass', function() {
     return gulp.src('./src/scss/*.scss')
         .pipe(sass())
         .pipe(autoprefixer({
-            browser: ['last 2 versions']
+            browsers: ['last 2 versions']
         }))
         .pipe(gulp.dest('./src/css'))
 });
